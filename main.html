@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* background-color: black; */
+        }
+
+        .start_Menu {
+            background-color: white;
+            width: 250px;
+            height: 175px;
+            margin: 0 auto;
+            padding-left: 50px;
+            border: 2px solid white;
+            border-radius: 3%;
+            position: relative;
+            top: 250px;
+            background-image: url("image/9145932499257611615_mq.jpg");
+            background-size: 100%;
+        }
+
+        #start_Button {
+            height: 40px;
+            width: 70px;
+            text-align: center;
+            font-size: large;
+            color: white;
+            background-color: transparent;
+        }
+        .Earth{
+            visibility: hidden;
+        }
+        /* #weather_Report{
+            position:relative;
+            z-index: -1;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="start_Menu" id="sm">
+        <h5>"Weather report"</h5>
+        <!-- <img src="image/9145932499257611615_mq.jpg" id="weather_Report"> -->
+        <button id="start_Button">Start</button>
+    </div>
+    <div class="Earth" id="imgbox1">
+        <img src="image/9145932499257611615_mq.jpg" alt="">
+    </div>
+    <script src="js/jquery.js"></script>
+    <script>
+        $("#start_Button").click(function () {
+            document.getElementById("sm").style.display = "none";
+            document.getElementById("imgbox1").style.visibility = "visible";
+        });
+    </script>
+</body>
+
+</html>
